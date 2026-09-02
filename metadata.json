@@ -1,0 +1,6 @@
+{
+  "name": "Biotecnología Alimentaria - Experiencia Inmersiva",
+  "description": "Exploración interactiva y scrollytelling sobre bioprocesos, biorreactores, fermentación de precisión y los alimentos del futuro.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

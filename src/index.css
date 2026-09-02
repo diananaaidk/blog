@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Scrollbar for clean bento aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+  border: 2px solid #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Bento Grid Card Surfaces & Utilities */
+.bento-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem; /* 24px rounded-3xl */
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.03), 0 1px 2px -1px rgba(15, 23, 42, 0.02);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+}
+
+.bento-card-elevated {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px -4px rgba(15, 23, 42, 0.06), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+}
+
+/* Legacy alias mappings for components */
+.lab-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.03);
+}
+
+.lab-card-elevated {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -3px rgba(15, 23, 42, 0.05);
+}
+
+.lab-grid-bg {
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Keyframe animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(1.5deg); }
+}
+
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+@keyframes flowLine {
+  0% { stroke-dashoffset: 24; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s ease-in-out infinite;
+}
+
+.animate-flow {
+  stroke-dasharray: 6 6;
+  animation: flowLine 1.5s linear infinite;
+}
+

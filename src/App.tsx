@@ -6,14 +6,9 @@ import { FermentationMetabolites } from './components/FermentationMetabolites';
 import { CellCultureComparison } from './components/CellCultureComparison';
 import { ShowcaseAlimentosManana } from './components/ShowcaseAlimentosManana';
 import { KnowledgeQuiz } from './components/KnowledgeQuiz';
-<<<<<<< HEAD
 import { CommentsArea } from './components/CommentsArea';
 import { BiotechGlossaryModal } from './components/BiotechGlossaryModal';
 import { Footer } from './components/Footer'; 
-=======
-import { BiotechGlossaryModal } from './components/BiotechGlossaryModal';
-import { Footer } from './components/Footer';
->>>>>>> 952a062f48f7dcdde61e42c489ea9d5d3039e85b
 
 export default function App() {
   const [glossaryOpen, setGlossaryOpen] = useState(false);
@@ -53,13 +48,10 @@ export default function App() {
 
         {/* Section 6: Desafío de Comprensión Científica */}
         <KnowledgeQuiz />
-<<<<<<< HEAD
 
         {/* Section 6: Desafío de Comprensión Científica */}
         <CommentsArea />
 
-=======
->>>>>>> 952a062f48f7dcdde61e42c489ea9d5d3039e85b
       </main>
 
       {/* Glossary Modal */}

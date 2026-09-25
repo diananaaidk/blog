@@ -157,7 +157,7 @@ export function CommentsArea() {
                 required
                 style={estilos.input}
                 maxLength={60}
-                pattern="[A-Za-zá-ú0-9ü.,- ]{1,999}"
+                pattern="[A-Za-zá-ú0-9ü.,- ]{1,999}" autoComplete="off"
             />
             <div style={{ width: '42px', flexShrink: 0 }} />
           </div>
@@ -178,7 +178,7 @@ export function CommentsArea() {
               rows={3}
               required
               style={estilos.textarea}
-              maxLength={200}
+              maxLength={200} autoComplete="off"
             />
 
             {/* Contenedor relativo para el botón y lista desplegable */}

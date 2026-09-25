@@ -319,9 +319,9 @@ const estilos: Record<string, React.CSSProperties> = {
     margin: '30px auto',
     padding: '24px',
     borderRadius: '12px',
-    backgroundColor: '#1e1e1e', // Fondo oscuro acorde al tema de la app
-    border: '1px solid #333333', // Borde visible para definir el contorno
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+    backgroundColor: '#ffffff',
+    border: '1px solid #333333',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
     fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   },
   titulo: {
